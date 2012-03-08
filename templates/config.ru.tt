@@ -1,0 +1,4 @@
+require File.expand_path("../config/boot", __FILE__)
+
+<%= @module_name %>::Application.initialize!
+run  <%= @module_name %>::Application

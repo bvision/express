@@ -1,0 +1,12 @@
+module <%= @module_name %>
+  class Application < Rails::Application
+    config.active_support.deprecation = :log
+    config.middleware.delete "Rack::Lock"
+    config.middleware.delete "ActionDispatch::Flash"
+    config.middleware.delete "ActionDispatch::BestStandardsSupport"
+
+    config.secret_token                = "<%= @secret_token %>"
+    config.cache_classes               = Rails.env.production?
+    config.consider_all_requests_local = Rails.env.development?
+  end
+end
