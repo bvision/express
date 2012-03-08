@@ -56,6 +56,14 @@ Express:
   a similar project focussed on using Rails apps as an API server, see
   [LightRail](https://github.com/lightness/lightrail).
 
+## What's included?
+
+* Routing, with one wildcard route for GETs and one controller.
+* View rendering
+* Unit/Functional testing
+* Whatever else **you** decide to add to your app.
+
+
 ## Some Background
 
 This library was inspired by a chapter in José Valim's "Crafting Rails
@@ -67,6 +75,9 @@ Unless you want to help out, you probably shouldn't use it yet. It's not
 entirely done.
 
 But if you insist, just install the gem and run `express new <your app name>`.
+
+You can then run your generated app with `rails server`, `rackup`, or `shotgun`,
+like any other Rack app.
 
 ## License
 
