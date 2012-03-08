@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.require_paths      = ["lib"]
   s.executables        = ["express"]
   s.default_executable = 'express'
+  s.add_dependency     = 'thor'
   s.add_development_dependency "railties", "~> 3.2.0"
 
   s.description = <<-EOM
