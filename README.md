@@ -3,9 +3,9 @@
 Express is an alternative to the `rails new` command that generates a
 slimmed-down, lightweight Rails application.
 
-One of the primary goals of the merger between Merb and Rails was to make Rails
-more modular, so that developers could easily pick and choose the pieces they
-want to use.
+One of the primary goals of the [merger between Merb and
+Rails](http://rubyonrails.org/merb) was to make Rails more modular, so that
+developers could easily pick and choose the pieces they want to use.
 
 It's become popular lately to lambaste Rails for its lack of modularity and for
 being "bloated." Few developers seem to realize the extent to which Rails 3's
