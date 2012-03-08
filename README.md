@@ -12,6 +12,16 @@ being "bloated." Few developers seem to realize the extent to which Rails 3's
 goals towards modularity were in fact achieved. This application will show you
 some of what's possible.
 
+## Using it
+
+Unless you want to help out, you probably shouldn't use it yet. It's not
+entirely done.
+
+But if you insist, just install the gem and run `express new <your app name>`.
+
+You can then run your generated app with `rails server`, `rackup`, or `shotgun`,
+like any other Rack app.
+
 ## How Fast?
 
 Express:
@@ -71,16 +81,6 @@ Rails 3.2.2
 
 This library was inspired by a chapter in José Valim's "Crafting Rails
 Applications," and by recent discussions on Twitter.
-
-## Using it
-
-Unless you want to help out, you probably shouldn't use it yet. It's not
-entirely done.
-
-But if you insist, just install the gem and run `express new <your app name>`.
-
-You can then run your generated app with `rails server`, `rackup`, or `shotgun`,
-like any other Rack app.
 
 ## License
 
