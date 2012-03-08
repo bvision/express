@@ -10,7 +10,7 @@ want to use.
 It's become popular lately to lambaste Rails for its lack of modularity and for
 being "bloated." Few developers seem to realize the extent to which Rails 3's
 goals towards modularity were in fact achieved. This application will show you
-what's possible.
+some of what's possible.
 
 ## How Fast?
 
@@ -28,7 +28,7 @@ Express:
     user  0m1.635s
     sys 0m0.225s
 
-    Rails 3.2.2
+Rails 3.2.2
 
     $ time rails runner '1+1'
 
@@ -48,6 +48,9 @@ Express:
   slimmed-down Rails app.
 
 * Express-generated apps can be upgraded to a full Rails app later if you want.
+  You'll just need to commit your app to SCM, run `rails new`, and resolve some
+  minor conflicts. Express uses the exact same file and directory structure as
+  any Rails app, so this should be fairly easy.
 
 * Express is geared towards content-oriented sites. If your site is largely
   content oriented, but is too complex to comfortably generate with something
