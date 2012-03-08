@@ -10,3 +10,5 @@ require "action_controller/railtie"
 
 require File.expand_path("../application", __FILE__)
 require File.expand_path("../routes", __FILE__)
+
+Dir[Rails.root.join("app/models/*.rb")].each {|x| require x}
