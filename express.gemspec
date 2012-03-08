@@ -9,13 +9,12 @@ Gem::Specification.new do |s|
   s.test_files         = `git ls-files -- {test}/*`.split("\n")
   s.require_paths      = ["lib"]
   s.executables        = ["express"]
-  s.default_executable = 'express'
-  s.add_dependency     = 'thor'
+  s.add_runtime_dependency     "thor"
   s.add_development_dependency "railties", "~> 3.2.0"
 
   s.description = <<-EOM
-Express generates a slimmed-down Rails application that leaves out anything not
-urgently needed for content-oriented sites. Your Rails app will launch very,
-very fast.
+Express generates a slimmed-down Rails application that leaves out anything
+not urgently needed for content-oriented sites. Your Rails app will launch
+very, very fast.
 EOM
 end
