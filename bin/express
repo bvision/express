@@ -20,7 +20,7 @@ class NewApp < Thor
     @module_name = name.classify
     @secret_token = SecureRandom.hex(64)
 
-    Dir[File.join(self.class.source_root, '**/*')].each do |file|
+    Dir[File.join(self.class.source_root, '{**/*,**/.*}')].each do |file|
       if File.file?(file)
         destination = file.gsub(self.class.source_root, name)
         if file =~ /\.tt$/
