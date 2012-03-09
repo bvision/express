@@ -1,4 +1,7 @@
+require File.expand_path("../config/boot", __FILE__)
 require "rake/testtask"
+require "rails"
+require "rails/tasks"
 
 task :default => :test
 
@@ -7,3 +10,8 @@ Rake::TestTask.new do |t|
   t.libs << "test"
   t.verbose = true
 end
+
+task :environment do
+  Rails.application.initialize!
+end
+
