@@ -30,6 +30,7 @@ class NewApp < Thor
         end
       end
     end
+    chmod("#{name}/script/rails", 0755)
   end
 end
 
