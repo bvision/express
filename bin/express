@@ -3,6 +3,7 @@
 require "thor"
 require "active_support/core_ext/string"
 require "digest/sha1"
+require 'securerandom'
 
 class NewApp < Thor
   include Thor::Actions
@@ -17,7 +18,8 @@ class NewApp < Thor
   desc "new", "Creates the app"
   def new
     @module_name = name.classify
-    @secret_token = 2.times.inject("") {|m, o| m << Digest::SHA1.hexdigest(rand(10e30).to_s)}
+    @secret_token = SecureRandom.hex(64)
+
     Dir[File.join(self.class.source_root, '**/*')].each do |file|
       if File.file?(file)
         destination = file.gsub(self.class.source_root, name)
